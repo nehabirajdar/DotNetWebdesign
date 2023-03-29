@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Arithnatic.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                Number<input type="number" id="num1" /><br />
+            </td>
+            <td>
+                Number<input type="number" id="num2" />
+            </td>
+            <td>
+                Result <input type="number" id="num3" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Add" onclick="add()" />
+                <input type="button" value="Sub" onclick="sub()" />
+                <input type="button" value="Mul" onclick="mul()" />
+                <input type="button" value="Div" onclick="div()" />
+
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        This is text
+    </p>
+    <p>
+        This is text
+    </p>
+    <input type="button" value="Apply CSS" onclick="applyCss()" />
+
+    <script>
+        function applyCss() {
+            for (var i = 0; i < 3; i++) {
+                document.getElementsByTagName("p")[i].style.backgroundColor = "green";
+                document.getElementsByTagName("p")[i].style.color = "red";
+                document.getElementsByTagName("p")[i].style.fontSize = "16px";
+
+            }
+        }
+    clientInformation
+        function add() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) + parseInt(n2);
+            document.getElementById("num3").value = sum;
+
+        }
+        function sub() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) - parseInt(n2);
+            document.getElementById("num3").value = sum;
+
+
+        }
+        function mul() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) * parseInt(n2);
+            document.getElementById("num3").value = sum;
+
+        }
+        function div() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) / parseInt(n2);
+            document.getElementById("num3").value = sum;
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Add() {
+            var a = 10, b = 20;
+            var c = a + b;
+            document.write("Addition is:"+c);
+        }
+
+        function Sub(z,y) {
+            var z = z - y;
+            document.write("<br/>Sub is:" + z);
+        }
+        function Multiplication(a, b) {
+            var c = a * b;
+            return c;
+        }
+        function Square(s) {
+            var t = s * s;
+            document.write("<br/>Square is:" + t);
+        }
+        function Cube(s) {
+            var t = s * s*s;
+            document.write("<br/>Cube is:" + t);
+        }
+
+        Add();
+        Sub(67 - 20);
+        var res = Multiplication(34, 67);
+        document.write("<br/> Multiplication:" + res);
+        Square(4);
+        Cube(6);
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿.nav-link{
+    color:#ff6a00;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:aqua;
+}
+
+.carousel-inner{
+    height:252px;
+}
+
+.menu{
+    background:grey !important;
+    position:fixed;
+    width:100%;
+    height:40px;
+    z-index:2;
+}
+.banner{
+    position:relative;
+    top:40px;
+}
+.list .prods{
+    position:relative;
+    top:30px;
+}
+
+@media only screen and (min-device-width:760px) and (max-device-width:1000px)
+{
+
+}
+
+@media only screen and (min-device-width:375px) and (max-device-width:500px) {
+    .nav{
+        font-size:5px;
+    }
+    .list h3{
+        font-size:12px;
+        top:-76px;
+    }
+    .list.prods{
+        top:-63px;
+    }
+    .card{
+        margin-bottom:15px;
+    }
+}
+

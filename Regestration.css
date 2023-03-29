@@ -1,0 +1,16 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #0094ff;
+    font-family: 'Arial';
+}
+
+.regerstration {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 0 0 0 450px;
+    padding: 80px;
+    background: #00ffff;
+    border-radius: 15px;
+}

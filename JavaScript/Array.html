@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var names = ["Amol", "Ajay", "Kishor", "Rahul", "Rohan"];
+        var nos = [34, 56, 78, 32, 89, 23, 90, 12];
+        names.push("Suraj"); // add at last
+        nos.push(45);
+        names.unshift("Test name"); // add at the 1st position in an array / 0th index
+        nos.unshift(0);
+        names.shift(); //remove the 0th index element
+        names.pop();// remove the last element
+
+        names.splice(2, 0, "Test1", "Test2"); // insert the elements from 2nd index
+        //names.splice(3, 1, "Tes3", "Test4"); // replace the new elements from the 2nd index
+        nos.splice(2, 0, 21 77);
+        var list = names.slice(2, 7); //   <6
+
+        names.sort();
+        names.reverse();
+
+        var data = "<ol>";
+        for (var i = 0; i < names.length; i++) {
+            // console.log(names[i]);
+            data += "<li>" + names[i] + "</li>";
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+        console.log(list);
+
+        var dataR = "<ol>";
+        for (var i = 0; i < nos.length; i++) {
+            // console.log(names[i]);
+            data += "<li>" + nos[i] + "</li>";
+        }    
+        dataR += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+        console.log(list);
+
+    </script>
+
+</body>
+</html>
